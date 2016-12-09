@@ -1,0 +1,1349 @@
+@font-face {
+  font-family: 'bebas_neueregular';
+  src:
+      local("Bebas Neue"), local("bebas_neueregular"),
+      url("../fonts/bebasneue_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  color: #000;
+}
+
+/* ====================== Общие стили ====================== */
+.btn-orange {
+  padding: 12px;
+  border: 0 solid transparent;
+  border-top-width: 2px;
+  border-top-color: #ffad00;
+  border-bottom-width: 3px;
+  border-bottom-color: #722700;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, #ff9000 0%, #ff4200 100%);
+  box-shadow: 0 5px 3px -2px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 19px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.btn-orange:hover, 
+.btn-orange:focus, 
+.btn-orange:active {
+  color: #fff;
+  background: linear-gradient(to bottom, #FFA300 0%, #FF5E00 100%);
+  outline: none;
+}
+
+/* ====================== Шапка ====================== */
+.main-header {
+  padding-bottom: 70px;
+  background: #201923 url(../img/header-bg.jpg) no-repeat 45% top;
+  background-size: cover;
+}
+
+.main-header .navbar-inverse {
+  background: none;
+  border: none;
+}
+
+.main-header .navbar .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-brand {
+  position: relative;
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.brand-title {
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+  display: inline-block;
+  width: 105px;
+  color: #eaeaea;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+.navbar-inverse .navbar-collapse {
+    margin-top: 20px;
+}
+
+.navbar-inverse .nav-title {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #adadad;
+  font-weight: 300;
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+  color: #fff;
+  background: none;
+}
+
+.navbar-inverse .navbar-right {
+  margin-right: 0;
+}
+
+.feedback .phone {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.feedback .callback {
+  text-align: right;
+}
+
+.feedback .icon-tel {
+  display: inline-block;
+  width: 13px;
+  height: 18px;
+  margin-right: 3px;
+  background: url(../img/icons/icon-tel.png) no-repeat center;
+  vertical-align: middle;
+}
+
+.feedback .callback a {
+  display: inline;
+  padding: 0;
+  color: #adadad;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: right;
+  border-bottom: 1px dashed #adadad;
+}
+
+.feedback .callback a:hover, 
+.feedback .callback a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ====================== header-intro ====================== */
+.main-header .header-intro {
+  margin: 0;
+  color: #fff;
+  font-family: bebas_neueregular;
+  font-size: 66px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-header .header-intro span {
+  color: #ff6000;
+}
+
+.main-header .header-intro-stat {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.main-header .header-intro-stat b {
+  font-family: bebas_neueregular;
+  font-size: 48px;
+}
+
+.main-header .header-intro-stat span {
+  color: #ff8e00;
+}
+
+/* ====================== header-list ====================== */
+.main-header .header-list {
+  margin-bottom: 30px;
+}
+
+.main-header .header-list .list-item {
+  width: 355px;
+  padding-left: 100px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.main-header .header-list .icon-guarantee {
+  background-image: url(../img/icons/header-list-1.png);
+}
+
+.main-header .header-list .icon-result {
+  background-image: url(../img/icons/header-list-2.png);
+}
+
+.main-header .header-list .icon-evacuation {
+  background-image: url(../img/icons/header-list-3.png);
+}
+
+.main-header .header-list span {
+  display: block;
+  padding: 30px 0;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ====================== Форма консультации ====================== */
+.consultation-form {
+  position: relative;
+  top: 120px;
+  padding: 40px 60px 80px;
+  background: url(../img/consultation-form-bg.jpg) no-repeat center;
+  background-size: cover;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.75),
+              0 8px 32px rgba(0, 0, 0, 0.75);
+}
+
+.consultation-form::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(to right, #ff8e00 0%, #ff6200 100%);
+}
+
+.consultation-form p {
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: bebas_neueregular;
+  font-size: 35px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.consultation-form input {
+  height: auto;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  background-color: #201e1c;
+  border: 1px solid transparent;
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.33),
+              0 2px 0 -1px rgba(255, 255, 255, 0.07);
+}
+
+.consultation-form input::-webkit-input-placeholder { color: #fff; }
+.consultation-form input::-moz-placeholder { color: #fff; }
+.consultation-form input:-moz-placeholder { color: #fff; }
+.consultation-form input::-ms-input-placeholder { color: #fff; }
+.consultation-form input:-ms-input-placeholder { color: #fff; }
+
+.consultation-form input:focus {
+  border-color: #ff8500;
+  box-shadow: none;
+}
+
+/* ====================== Список техники ====================== */
+.technology {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background: url(../img/technology/technology-bg.svg) no-repeat,
+              #f6f7fb url(../img/technology/technology-pattern-bg.jpg);
+  text-align: center;
+}
+
+.technology .technology-title {
+  font-family: bebas_neueregular;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.technology .technology-desc {
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.technology .technology-desc span {
+  color: #ff8e00;
+}
+
+.technology .technology-list {
+  display: inline-block;
+}
+
+.technology .technology-item {
+  position: relative;
+  float: left;
+  width: 296px;
+  height: 365px;
+  margin-right: 25px;
+  margin-bottom: 65px;
+  background: #656c73 url(../img/technology/technology-item-bg.png) no-repeat center bottom;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.2);
+}
+
+.technology .technology-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.technology .technology-item::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -128px;
+  width: 256px;
+  height: 5px;
+  background: #ef5b00;
+}
+
+.technology .technology-item p {
+  margin: 0;
+  padding: 22px 30px;
+  color: #fff;
+  font-family: bebas_neueregular;
+  font-size: 23px;
+  line-height: 1.1;
+}
+
+.technology-list .btn-orange {
+  padding: 15px 70px;
+  line-height: 1.4;
+}
+
+/* ====================== Видео ====================== */
+.video-section {
+  position: relative;
+  background: #312013 url(../img/video-bg.jpg) no-repeat center top;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.video-section .video-nav {
+  display: inline-block;
+  padding: 264px 0;
+  vertical-align: middle;
+}
+
+.video-section .play-btn {
+  width: 137px;
+  height: 137px;
+  margin-right: 25px;
+  padding: 0;
+  background: url(../img/icons/play-icon.svg) no-repeat center;
+  border: none;
+  font-size: 0;
+}
+
+.video-section .play-btn:active, 
+.video-section .play-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.video-section .video-title {
+  display: inline-block;
+  margin: 0;
+  color: #fff;
+  font-family: bebas_neueregular;
+  font-size: 64px;
+  font-weight: bold;
+  border-bottom: 3px dotted #ef5b00;
+  vertical-align: middle;
+}
+
+/* ====================== Наш опыт ====================== */
+.experience {
+  min-height: 822px;
+  background: #1a1817 url(../img/experience-bg.jpg) no-repeat center top;
+  background-size: cover;
+  text-align: center;
+}
+
+.experience .experience-title {
+  margin-top: 140px;
+  margin-bottom: 70px;
+  color: #fff;
+  font-family: bebas_neueregular;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.experience .experience-items {
+  margin-bottom: 30px;
+}
+
+.experience .experience-item {
+    position: relative;
+    min-height: 290px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.experience .experience-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 33px;
+  height: 33px;
+  margin-left: -16px;
+  background: url(../img/icons/check-icon.svg) no-repeat center;
+}
+
+.experience .experience-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 7px;
+  margin-left: -90px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.experience-item .experience-num {
+  color: #ff6600;
+  font-family: bebas_neueregular;
+  font-size: 72px;
+}
+
+.experience-item .experience-desc {
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* ====================== Шаги ====================== */
+
+.steps-section {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.steps-section .steps-row {
+  display: table-row;
+}
+
+.steps-section .step-photo, 
+.steps-section .step-desc {
+  display: table-cell;
+  width: 50%;
+  height: 575px;
+}
+
+.steps-section .step-photo {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.steps-section .step-photo .step-num {
+  position: absolute;
+  right: 40px;
+  bottom: 80px;
+  color: #fff;
+  font-size: 30px;
+}
+.step-photo .step-num b {
+  color: #ff6800;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.steps-section .step-desc {
+  position: relative;
+  padding-left: 90px;
+  background-repeat: no-repeat; 
+  background-position: right top;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.steps-section .step-desc-left {
+  position: absolute;
+  top: 50%;
+  right: 90px;
+  margin-top: -200px;
+}
+
+.steps-section .step-icon {
+  display: inline-block;
+  width: 56px;
+  height: 51px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.steps-section .step-title {
+  font-family: bebas_neueregular;
+  font-size: 43px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.steps-section .step-title span {
+  color: #ff6800;
+}
+
+.steps-section .step-text {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.steps-section .btn-orange {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.steps-row:nth-child(odd) .step-desc {
+  background-image: url(../img/steps/step-r-bg.svg);
+}
+
+.steps-row:nth-child(even) .step-num {
+  right: auto;
+  left: 40px;
+}
+
+.steps-row:nth-child(even) .step-desc {
+  background-color: #f1f5f7;
+  background-image: url(../img/steps/step-l-bg.svg);
+  background-position: left top;
+}
+
+/* Шаг 1 */
+.step-1 .step-photo {
+  background-image: url(../img/steps/step-1.jpg);
+}
+
+.step-1 .step-desc .step-icon {
+  background-image: url(../img/icons/step-icon-1.png);
+}
+
+/* Шаг 2 */
+.step-2 .step-photo {
+  background-image: url(../img/steps/step-2.jpg);
+}
+
+.step-2 .step-desc .step-icon {
+  background-image: url(../img/icons/step-icon-2.png);
+}
+
+/* Шаг 3 */
+.step-3 .step-photo {
+  background-image: url(../img/steps/step-3.jpg);
+}
+
+.step-3 .step-desc .step-icon {
+  background-image: url(../img/icons/step-icon-3.png);
+}
+
+/* Шаг 4 */
+.step-4 .step-photo {
+  background-image: url(../img/steps/step-4.jpg);
+}
+
+.step-4 .step-desc .step-icon {
+  background-image: url(../img/icons/step-icon-4.png);
+}
+
+/* Шаг 5 */
+.step-5 .step-desc .step-icon {
+  background-image: url(../img/icons/step-icon-5.png);
+}
+
+/* Шаг 6 */
+.step-6 .step-photo {
+  background-image: url(../img/steps/step-6.jpg);
+}
+
+.step-6 .step-desc .step-icon {
+  background-image: url(../img/icons/step-icon-6.png);
+}
+
+.step-6 .step-list-title {
+  display: block;
+  margin-bottom: 20px;
+  color: #ff6200;
+  font-size: 18px;
+}
+
+.step-6 .step-desc ul {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  padding-left: 0;
+  list-style-position: inside;
+  color: #ff6200;
+  font-weight: 300;
+}
+
+.step-6 .step-desc ul span {
+  color: #000;
+}
+
+.step-6 .btn-orange {
+  display: block;
+}
+
+/* Шаг 7 */
+.step-7 .step-photo {
+  background-image: url(../img/steps/step-7.jpg);
+}
+
+.step-7 .step-desc .step-icon {
+  background-image: url(../img/icons/step-icon-7.png);
+}
+
+/* Шаг 8 */
+.step-8 .step-photo {
+  background-image: url(../img/steps/step-8.jpg);
+}
+
+.step-8 .step-desc .step-icon {
+  background-image: url(../img/icons/step-icon-8.png);
+}
+
+/* ====================== Дополнительные услуги ====================== */
+.services {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.services .services-title {
+  margin-bottom: 30px;
+  padding: 0 20px;
+  font-family: bebas_neueregular;
+  font-size: 43px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.services .services-list {
+  display: inline-block;
+  margin-right: 80px;
+  margin-bottom: 30px;
+  vertical-align: top;
+}
+
+.services .services-list:last-of-type {
+  margin-right: 0;
+}
+
+.services-list .list-item {
+  width: 350px;
+  padding-left: 100px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.services-list span {
+  display: block;
+  padding: 26px 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.services-list:last-of-type span {
+  padding: 24px 0;
+}
+
+.services-list .icon-pipeline {
+  background-image: url(../img/icons/services-icon-1.png);
+}
+
+.services-list .icon-excavation {
+  background-image: url(../img/icons/services-icon-2.png);
+}
+
+.services-list .icon-welding {
+  background-image: url(../img/icons/services-icon-3.png);
+}
+
+.services-list .icon-geodetic {
+  background-image: url(../img/icons/services-icon-4.png);
+}
+
+.services-list .icon-trucking {
+  background-image: url(../img/icons/services-icon-5.png);
+}
+
+.services-list .icon-equipment {
+  background-image: url(../img/icons/services-icon-r1.png);
+}
+
+.services-list .icon-repairs {
+  background-image: url(../img/icons/services-icon-r2.png);
+}
+
+.services-list .icon-teletesting {
+  background-image: url(../img/icons/services-icon-r3.png);
+}
+
+.services-list .icon-washing {
+  background-image: url(../img/icons/services-icon-r4.png);
+}
+
+.services-list .icon-support {
+  background-image: url(../img/icons/services-icon-r5.png);
+}
+
+.services-list .icon-rent {
+  background-image: url(../img/icons/services-icon-r6.png);
+}
+
+.services .btn-orange {
+  display: block;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* ====================== Карта ====================== */
+.map {
+  min-height: 576px;
+  background: url(../img/map-bg.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.map .map-contacts {
+  display: inline-block;
+  margin-top: 56px;
+  padding: 40px 100px;
+  text-align: center;
+  border: 13px solid #fff;
+  vertical-align: middle;
+}
+
+.map .map-contacts p {
+  margin-bottom: 0;
+  font-family: bebas_neueregular;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  text-shadow: 1px 1px 57px rgba(255, 255, 255, 0.75);
+}
+
+.map .map-contacts p:last-of-type {
+  margin-top: 20px;
+}
+
+.map .map-contacts b {
+  font-family: bebas_neueregular;
+  font-size: 43px;
+  line-height: 1;
+}
+
+.map .map-contacts span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.map .map-contacts .map-icon {
+  display: block;
+  width: 108px;
+  height: 125px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background: url(../img/icons/map-icon.png) no-repeat center;
+}
+
+/* ====================== Форма внизу ====================== */
+.form-footer-section {
+  min-height: 620px;
+  background: url(../img/form-footer-bg.jpg) no-repeat center top;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.form-footer-title {
+  margin-top: 90px;
+  font-family: bebas_neueregular;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.form-footer-desc {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-footer-desc span {
+  font-size: 26px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.form-footer-section form {
+  float: none;
+}
+
+.form-footer-section form input {
+  height: auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.form-footer-section form .btn-orange {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* ====================== Футер ====================== */
+.footer {
+  min-height: 128px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: url(../img/footer-bg.png) repeat-x left top;
+}
+
+.footer .brand-title {
+  color: #938d89;
+}
+
+.footer-address {
+  margin-top: 22px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-address span {
+  font-size: 13px;
+}
+
+.footer .feedback {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.footer .callback a {
+  color: #ff9600;
+}
+
+/************************************************************************************
+*==============================                 ====================================*
+*==============================  Медиа запросы  ====================================*
+*==============================                 ====================================*
+************************************************************************************/
+
+@media (max-width: 991px) {
+
+  .btn-orange { font-size: 18px; }
+
+  .navbar-brand>img {
+    width: 150px;
+    height: auto;
+  }
+  .main-header .navbar-inverse .navbar-collapse { margin-top: 0; }
+  
+  .main-header .header-intro { font-size: 59px; }
+
+  .main-header .header-intro span, 
+  .main-header .header-intro-stat span {
+    color: #ffffff;
+  }
+
+  .main-header .header-intro-stat {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  .main-header .header-intro-stat b { font-size: 42px; }
+
+  .main-header .header-list .list-item {
+    width: 262px;
+    padding-left: 80px;
+    background-size: 55px auto;
+  }
+
+  .main-header .header-list span {
+    padding: 20px 0;
+    font-size: 15px;
+  }
+
+  .consultation-form {
+    top: 0;
+    padding: 30px 45px 40px;
+  }
+
+  .consultation-form p {
+    margin-bottom: 20px;
+    font-size: 27px;
+  }
+
+  .consultation-form input { font-size: 14px; }
+
+  .technology { padding: 40px 0; }
+
+  .technology .technology-title { font-size: 53px; }
+
+  .technology .technology-desc { font-size: 24px; }
+
+  .technology .technology-item {
+    width: 222px;
+    height: 265px;
+  }
+
+  .technology .technology-item img {
+    width: 222px;
+    height: 197px;
+  }
+
+  .technology .technology-item::after {
+    width: 176px;
+    height: 3px;
+    margin-left: -88px;
+  }
+
+  .technology .technology-item p {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .video-section .video-nav { padding: 160px 0; }
+
+  .video-section .play-btn {
+    width: 107px;
+    height: 107px;
+    background-size: 107px;
+  }
+
+  .video-section .video-title { font-size: 53px; }
+
+  .experience { min-height: 566px; }
+
+  .experience .experience-title { margin: 60px 0 30px; }
+
+  .experience .experience-item { min-height: 260px; }
+
+  .experience .experience-item::after {
+    width: 140px;
+    height: 5px;
+    margin-left: -70px;
+  }
+
+  .experience-item .experience-num { font-size: 56px; }
+
+  .experience-item .experience-desc {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  .steps-section .step-photo, 
+  .steps-section .step-desc { height: 395px; }
+
+  .steps-section .step-photo img {
+    width: auto;
+    height: 354px;
+  }
+
+  .steps-section .step-photo .step-num { bottom: 45px; }
+
+  .steps-section .step-desc { padding-left: 50px; }
+
+  .steps-section .step-desc-left {
+    right: 50px;
+    margin-top: -170px;
+  }
+
+  .steps-section .step-6 .step-desc-left { right: 15px; }
+
+  .step-6 .step-desc .step-icon { margin-bottom: 10px; }
+
+  .step-6 .step-list-title { margin-bottom: 5px; }
+
+  .steps-section .step-title { font-size: 27px; }
+
+  .steps-section .step-text { font-size: 14px; }
+
+  .steps-section .btn-orange {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+  }
+
+  .services-list .list-item {
+    width: 300px;
+    padding-left: 90px;
+  }
+
+  .services-list span { font-size: 15px; }
+
+  .map .map-contacts p { font-size: 30px; }
+
+  .form-footer-section { min-height: 550px; }
+
+  .form-footer-title { margin-top: 55px; }
+
+  .footer { min-height: 115px; }
+
+  .footer .navbar-brand {
+    margin-top: 5px;
+    padding: 0;
+  }
+
+  .footer-address {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .footer .feedback { margin-top: 0; }
+
+}
+
+@media (max-width: 767px) {
+
+  .btn-orange { font-size: 17px; }
+
+  .main-header { padding-bottom: 0; }
+
+  .navbar-brand>img { width: 110px; }
+
+  .main-header .navbar-inverse .navbar-collapse { margin-top: 10px; }
+
+  .feedback, 
+  .feedback .callback {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .feedback .phone { font-size: 15px; }
+
+  .main-header .slogan {
+    padding: 5px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .main-header .header-intro { font-size: 29px; }
+  
+  .main-header .header-intro-stat {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .main-header .header-intro-stat b { font-size: 30px; }
+
+  .main-header .header-list .list-item {
+    width: 295px;
+    margin: 0 auto;
+    padding-left: 55px;
+    background-size: 38px auto;
+  }
+
+  .main-header .header-list span {
+    padding: 15px 0;
+    font-weight: 300;
+    text-transform: none;
+  }
+
+  .consultation-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: none;
+  }
+
+  .consultation-form form {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .technology .container { padding: 0; }
+
+  .technology .container .row { margin: 0; }
+
+  .technology .technology-title {
+    padding: 0 20px;
+    font-size: 27px;
+  }
+
+  .technology .technology-desc {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-size: 15px;
+  }
+
+  .technology .technology-item {
+    float: none;
+    width: 300px;
+    height: 98px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    background: #6a7178;
+    box-shadow: none;
+  }
+
+  .technology .technology-item::after { display: none; }
+
+  .technology .technology-item img {
+    float: left;
+    width: 119px;
+    height: 98px;
+  }
+
+  .technology .technology-item p {
+    margin-left: 120px;
+    padding: 30px 15px;
+    font-size: 17px;
+  }
+
+  .technology-list .btn-orange {
+    padding: 0;
+    width: 300px;
+    height: 70px;
+  }
+
+  .video-section .video-nav { padding: 125px 0; }
+
+  .video-section .play-btn {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    background-size: 65px;
+  }
+
+  .video-section .video-title { font-size: 27px; }
+
+  .experience .experience-title {
+    margin: 30px 0;
+    font-size: 27px;
+  }
+
+  .experience .experience-items .container { padding: 0 25px; }
+
+  .experience .experience-item {
+    min-height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .experience .experience-item::before { top: 10px; }
+
+  .experience .experience-item::after { display: none; }
+
+  .experience-item .experience-num { font-size: 35px; }
+
+  .experience-item .experience-desc { font-size: 13px; }
+
+  .steps-section {
+    display: block;
+    width: auto;
+  }
+
+  .steps-section .steps-row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .steps-section .steps-row:nth-child(even) {
+    background-color: #f1f5f7;
+  }
+
+  .steps-section .step-photo {
+    display: block;
+    width: 300px;
+    height: 160px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .steps-section .steps-row:nth-child(even) .step-photo {
+    order: -1;
+  }
+
+  .steps-section .step-photo img {
+    width: auto;
+    height: 160px;
+  }
+
+  .steps-section .step-photo .step-num {
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+  }
+
+  .steps-row:nth-child(even) .step-num { left: auto; }
+
+  .step-photo .step-num b { font-size: 48px; }
+
+  .steps-section .step-desc {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 0;
+    background-image: none !important;
+  }
+
+  .steps-section .step-desc-left {
+    position: static;
+    top: auto;
+    right: auto;
+    margin-top: 0;
+  }
+
+  .steps-section .step-icon {
+    float: left;
+    width: 38px;
+    height: 35px;
+    margin-right: 15px;
+  }
+
+  .steps-section .step-title {
+    float: left;
+    font-size: 21px;
+  }
+
+  .steps-section .step-text { float: left; }
+
+  .steps-section .btn-orange {
+    width: 220px;
+    margin: auto;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .step-6 .step-desc ul {
+    width: 120px;
+    margin-right: 10px;
+    padding-left: 15px;
+    list-style-position: outside
+  }
+
+  .services { padding: 20px 0; }
+
+  .services .services-title { font-size: 27px; }
+
+  .services .services-list { margin-right: 5px; }
+
+  .services-list .list-item {
+    width: 150px;
+    padding-left: 50px;
+    background-size: 41px 41px;
+  }
+
+  .services-list span, 
+  .services-list:last-of-type span {
+    padding: 15px 0;
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  .services .btn-orange { padding: 15px; }
+
+  .map { min-height: 397px; }
+
+  .map .map-contacts {
+    margin-top: 33px;
+    padding: 20px;
+  }
+
+  .map .map-contacts p { font-size: 27px; }
+
+  .map .map-contacts b { font-size: 28px; }
+
+  .map .map-contacts span { font-size: 13px; }
+
+  .map .map-contacts .map-icon {
+    width: 74px;
+    height: 85px;
+  }
+
+  .form-footer-section { min-height: 430px; }
+
+  .form-footer-title {
+    margin-top: 25px;
+    font-size: 27px;
+  }
+
+  .form-footer-desc {
+    margin-bottom: 15px;
+    font-size: 17px;
+  }
+
+  .form-footer-desc span { font-size: 15px; }
+
+  .form-footer-section form {
+    width: 290px;
+    padding: 0;
+  }
+
+  .form-footer-section form .btn-orange { font-size: 15px; }
+
+  .footer { min-height: 85px; }
+
+  .footer .feedback .phone { font-size: 13px; }
+
+  .footer .feedback .callback {
+    text-align: right;
+  }
+
+  .footer .feedback .callback a {
+    font-size: 12px;
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .navbar-nav>li>a { padding: 10px;}
+}
+
+@media (min-width: 1200px) {
+  .main-header .navbar-inverse .navbar-collapse { text-align: center; }
+
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+}
+
+
+
+
+
+
